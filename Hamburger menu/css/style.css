@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    transition: 0.1s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    font-size: 200%;
+}
+
+.navbar {
+    width: 28vw;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: -600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 0px 0px 60%;
+    transition: right 0.5s ease-in-out;
+}
+
+.nav-list {
+    text-align: right;
+}
+.nav-item {
+    list-style: none;
+    margin: 20px;
+}
+.hamburgermenu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px)
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px)
+}
+
+.change {
+    right: 0;
+}
